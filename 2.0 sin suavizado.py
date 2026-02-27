@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from scipy.signal import savgol_filter
 
 # --- 1) Carpeta y archivos ---
-CARPETA = Path(r"C:\Users\camil\Desktop\Proyecto de grado\Resutados UV VIS\Ensayo eucalipto")  # <-- cambia si hace falta
+CARPETA = Path(r"C:\Users\camil\Desktop\Proyecto de grado\Resutados UV VIS\Ensayo eucalipto\ensayo25 02 2026")  # <-- cambia si hace falta
 archivos = sorted(CARPETA.glob("*.dta"))
 
 # --- 2) Lector UV-Vis .DTA (texto) ---
