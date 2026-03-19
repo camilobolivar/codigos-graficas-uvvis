@@ -253,7 +253,7 @@ fig2, ax2 = plt.subplots(figsize=(6, 3.5))
 ax2.plot(t, stats["Eint"], color="#0891b2")
 ax2.set(xlabel="t (u.a.)",
         ylabel=r"$E_{\rm int}=\sum\gamma_i\,4\pi R_i^2$  (u.a.)",
-        title="Energía interfacial total (decrece con Tween 80)")
+        title="Energía interfacial total")
 ax2.grid(True, alpha=0.4)
 plt.tight_layout()
 plt.savefig(out("eint.png"), dpi=150)
@@ -342,7 +342,7 @@ def draw_scene(drops, title="Gotas + Tween 80", n_surf=22, ax=None):
 fig, (ax_i, ax_f) = plt.subplots(1, 2, figsize=(11, 5.5))
 draw_scene(frames[0],  title="t = inicial", ax=ax_i)
 draw_scene(frames[-1], title="t = final",   ax=ax_f)
-plt.suptitle("Evolución de la emulsión (Tween 80)", fontsize=13, y=1.01)
+plt.suptitle("Evolución de la emulsión", fontsize=13, y=1.01)
 plt.tight_layout()
 plt.savefig(out("scene_comparison.png"), dpi=150, bbox_inches="tight")
 plt.show()
